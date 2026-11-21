@@ -199,7 +199,7 @@
     }
 
     .services__right {
-        grid-template-columns: 1fr;
+         grid-template-columns: minmax(0, 1fr);
     }
 
     .team__grid {
@@ -403,10 +403,11 @@
         max-width: 110px;
         height: auto;
     }
-.service-card {
-    padding: 20px;
-    min-height: 150px;
-}
+
+    .service-card {
+        padding: 20px;
+        min-height: 150px;
+    }
 
     .proposal__title {
         font-size: 28px;

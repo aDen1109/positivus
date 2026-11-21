@@ -196,7 +196,7 @@ body {
 
 .services__right {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+   grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 30px;
 }
 
@@ -205,9 +205,11 @@ body {
     justify-content: space-between;
     align-items: stretch;
     padding: 30px;
+     min-width: 0; /* Запрещает карточке вылезать за пределы сетки */
+  width: 100%;
     border-radius: 20px;
     min-height: 180px;
-    transition: 0.3s ease;
+     transition: transform 0.3s ease; 
 }
 
 .service-card__content {
